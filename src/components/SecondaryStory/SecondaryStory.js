@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import {COLORS} from "../../constants";
 
 const SecondaryStory = ({ id, title, image, location, abstract }) => {
   return (
@@ -14,13 +15,18 @@ const SecondaryStory = ({ id, title, image, location, abstract }) => {
 };
 
 const Wrapper = styled.article`
-  display: grid;
-  grid-template-areas:
+    display: grid;
+    grid-template-areas:
     'image heading'
     'image abstract';
-  gap: 4px 16px;
-  grid-template-columns: 120px 1fr;
-  color: var(--color-gray-900);
+    gap: 4px 16px;
+    grid-template-columns: 120px 1fr;
+    color: var(--color-gray-900);
+    
+    
+    background-color: ${COLORS.gray[100]};
+    
+    padding: 1rem 0 1rem 0;
 `;
 
 const Image = styled.img`
