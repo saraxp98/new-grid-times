@@ -23,9 +23,10 @@ const Wrapper = styled.article`
     grid-template-columns: 80% auto;
     background-color: ${COLORS.gray[100]};
     padding: 1rem 0 1rem 0;
-    
+
     @media ${QUERIES.tabletOnly} {
         display: revert;
+        padding-inline: 1rem; 
     }
 `;
 
@@ -36,8 +37,8 @@ const Avatar = styled.img`
     border-radius: 50%;
     object-fit: cover;
 
-    grid-column-start: -1;
-    align-self: center;
+    /*grid-column-start: -1;
+    align-self: center;*/
 `;
 
 const AuthorName = styled.p`

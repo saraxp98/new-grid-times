@@ -88,14 +88,14 @@ const MainHeader = styled(MaxWidthWrapper)`
     justify-content: center;
     margin-top: 32px;
     margin-bottom: 48px;
-
+    
     &>div:first-of-type {
         display: none;
     }
     
     @media ${QUERIES.desktopAndUp} {
         margin-top: 1rem;
-        margin-inline: 7.5rem;
+        margin-inline: auto;
         justify-content: space-between;
         padding: 0;
 
