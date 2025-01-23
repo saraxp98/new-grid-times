@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import {QUERIES} from "../../constants";
 
 const MiniStory = ({ id, image, title }) => {
   return (
@@ -13,9 +14,15 @@ const MiniStory = ({ id, image, title }) => {
 };
 
 const Wrapper = styled.article`
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 150px;
+    
+    @media ${QUERIES.desktopAndUp} { 
+        width: 200px;
+    }
 `;
 
 const Image = styled.img`

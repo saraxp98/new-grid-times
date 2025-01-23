@@ -50,6 +50,7 @@ const Wrapper = styled.div`
     'advertisement';
     gap: 48px;
     margin-bottom: 48px;
+
 `;
 
 const MainStorySection = styled.section`
